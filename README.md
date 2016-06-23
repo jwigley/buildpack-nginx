@@ -16,7 +16,7 @@ All static files that you want to serve should be in the root directory of your 
 `ROOT` - Optional: overrides root directory
 
 ## Nginx Configuration
-Override default configuration by adding `nginx.conf.erb` in the root directory
+Override default configuration by adding `nginx.conf.erb` and any other related configs in the `conf` directory
 
 ## Credits and License
 `buildpack-nginx` is licensed under the CC0 1.0 Universal license and has been informed by many similar projects on the web
