@@ -9,9 +9,13 @@ This buildpack has been successfully run on Digital Ocean instances of Ubuntu 14
 2. Add another, *empty* file called `.static` to your root directory of your web project. It signals that this buildpack shall be used
 3. Push your project to Dokku
 
-All static files that you want to serve should be in the root directory of your repository. No need to use a seperate `www` folder. `buildpack-nginx` will automatically download the buildpack, download NGINX, compile it, and install it. The next time you push your project, the buildpack will reuse the precompiled binaries. 
+All static files that you want to serve should be in the root directory of your repository. No need to use a seperate `www` folder. `buildpack-nginx` will automatically download the buildpack, download NGINX, compile it, and install it. The next time you push your project, the buildpack will reuse the precompiled binaries.
 
-## NGINX CONFIGURATION
+## Environment Variables
+
+`ROOT` - Optional: overrides root directory
+
+## Nginx Configuration
 Override default configuration by adding `nginx.conf.erb` in the root directory
 
 ## Credits and License
